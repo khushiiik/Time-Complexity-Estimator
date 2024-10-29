@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Complexity Estimator</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Estimate the Time Complexity of Your Function</h1>
+    <div class="form-container">
+        <form action="{% url 'result' %}" method="POST">
+            {% csrf_token %}
+            <textarea name="function_code" rows="10" cols="250" placeholder="Enter your function code here..."></textarea>
+            <input type="submit" value="Analyze Time Complexity">
+        </form>
+    </div>
+</body>
+</html>

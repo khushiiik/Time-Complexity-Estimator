@@ -1,0 +1,58 @@
+body {
+	background: linear-gradient(
+		347deg,
+		rgba(2, 0, 36, 1) 26%,
+		rgba(9, 9, 121, 1) 68%,
+		rgba(0, 82, 255, 1) 100%
+	);
+	background: rgb(2, 0, 36);
+	color: white;
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+textarea {
+	color: white;
+	padding: 10px;
+	width: 90%;
+	margin: 20px auto;
+	display: block;
+	font-size: 16px;
+	border-radius: 9px;
+	background: rgba(45, 43, 43, 0.12);
+	box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(53.6px);
+}
+
+
+
+input[type="submit"] {
+	background-color: #083e77;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 16px;
+	float: right;
+	margin-right: 60px;
+}
+
+input[type="submit"]:hover {
+	background-color: #0056b3;
+}
+
+.btn {
+	background-color: #083e77;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 16px;
+	float: right;
+	margin-right: 60px;
+}

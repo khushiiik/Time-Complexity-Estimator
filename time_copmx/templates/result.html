@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Complexity Result</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Time Complexity Analysis Result</h1>
+    <div class="result-container">
+        <p><strong>Your Function Code:</strong></p>
+        <textarea rows="10" cols="50" readonly>{{ function_code }}</textarea>
+        <p><strong>Estimated Time Complexity:</strong> {{ complexity }}</p>
+        
+            <a href="{% url 'home' %}">
+                <input type="button" value="Analyze Another Function"  class="btn">
+            </a>
+        
+    </div>
+</body>
+</html>
